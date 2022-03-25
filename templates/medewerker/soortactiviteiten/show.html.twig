@@ -1,0 +1,48 @@
+{% extends 'medewerker.html.twig' %}
+
+{% block title %}Soortactiviteit{% endblock %}
+
+{% block menu %}
+    <li><a href="{{ path('admin/index') }}">home</a></li>
+    <li><a href="{{ path('admin/activiteiten') }}"><span class="badge">{{ activiteiten|length }}</span>beheer</a></li>
+    <li class="active"><a href="{{ path('admin/soortactiviteiten') }}"><span class="badge">{{ soortactiviteiten|length }}</span> soortactiviteiten</a></li>
+{% endblock %}
+
+{% block content %}
+    <h1>Soortactiviteit</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ soortactiviteit.id }}</td>
+            </tr>
+            <tr>
+                <th>Naam</th>
+                <td>{{ soortactiviteit.naam }}</td>
+            </tr>
+            <tr>
+                <th>MinLeeftijd</th>
+                <td>{{ soortactiviteit.minLeeftijd }}</td>
+            </tr>
+            <tr>
+                <th>Tijdsduur</th>
+                <td>{{ soortactiviteit.tijdsduur }}</td>
+            </tr>
+            <tr>
+                <th>Prijs</th>
+                <td>{{ soortactiviteit.prijs }}</td>
+            </tr>
+            <tr>
+                <th>Beschrijving</th>
+                <td>{{ soortactiviteit.beschrijving }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('admin/soortactiviteiten') }}">back to list</a>
+
+    <a href="{{ path('admin/soortactiviteiten/edit', {'id': soortactiviteit.id}) }}">edit</a>
+
+    {{ include('medewerker/soortactiviteiten/_delete_form.html.twig') }}
+{% endblock %}

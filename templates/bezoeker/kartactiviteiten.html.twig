@@ -9,11 +9,31 @@
     <section >
         <article>
             <h3>Er zijn {{ soortactiviteiten|length }} soorten activiteiten </h3>
-            <ul class="list-group">
+            <table class="table" style="table-layout: fixed" >
+                <caption>
+                    Dit zijn alle beschikbare activiteiten
+                </caption>
+                <thead>
+                <tr>
+                    <td>naam</td>
+                    <td>beschrijving</td>
+                    <td>prijs</td>
+                    <td>tijdsduur</td>
+                    <td>minimum leeftijd</td>
+                </tr>
+                </thead>
+                <tbody>
                 {% for activiteit in soortactiviteiten %}
-                <li class="list-group-item text-primary">{{ activiteit.naam }}</li>
+                <tr>
+                    <td>{{ activiteit.naam}}</td>
+                    <td>{{ activiteit.beschrijving}}</td>
+                    <td>&euro;{{ activiteit.prijs|number_format(2, ',', '.')}}</td>
+                    <td>{{ activiteit.tijdsduur}} minuten</td>
+                    <td>{{ activiteit.minLeeftijd }} jaar</td>
+                </tr>
                 {% endfor %}
-            </ul>
+                </tbody>
+            </table>
             <p>
                 Let op, voor het karten zijn dichte schoenen verplicht.
                 Karten met een korte broek is niet toegestaan. Wij hebben overalls ter beschikking,

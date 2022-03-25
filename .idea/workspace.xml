@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4925ba3f-4778-4576-9410-6a8c4ecc0e0d" name="Default Changelist" comment="" />
+    <list default="true" id="4925ba3f-4778-4576-9410-6a8c4ecc0e0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20220325090151.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/SoortactiviteitType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medewerker/soortactiviteiten/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medewerker/soortactiviteiten/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medewerker/soortactiviteiten/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medewerker/soortactiviteiten/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medewerker/soortactiviteiten/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medewerker/soortactiviteiten/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kartingV4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kartingV4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MedewerkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MedewerkerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Soortactiviteit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Soortactiviteit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bezoeker/kartactiviteiten.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bezoeker/kartactiviteiten.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medewerker.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medewerker/activiteiten.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/activiteiten/activiteiten.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medewerker/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/activiteiten/add.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medewerker/beheer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/activiteiten/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medewerker/details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/activiteiten/details.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -114,6 +147,10 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/common" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ppfUyvoSW28yBWwqaBJieWinKl" />
@@ -139,6 +176,8 @@
       <recent name="C:\Users\femke\PhpstormProjects\kartingV4\src\Entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\karting\templates\medewerker\activiteiten" />
+      <recent name="C:\xampp\htdocs\karting\templates\medewerker\soortactiviteiten" />
       <recent name="C:\Users\femke\PhpstormProjects\kartingV4\templates" />
     </key>
   </component>
@@ -151,10 +190,22 @@
       <option name="presentableId" value="Default" />
       <updated>1615884971491</updated>
       <workItem from="1615884972633" duration="6265000" />
+      <workItem from="1648196167505" duration="7390000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

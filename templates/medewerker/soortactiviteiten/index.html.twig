@@ -1,0 +1,49 @@
+{% extends 'medewerker.html.twig' %}
+
+{% block title %}Soortactiviteit index{% endblock %}
+
+{% block menu %}
+    <li><a href="{{ path('admin/index') }}">home</a></li>
+    <li><a href="{{ path('admin/activiteiten') }}"><span class="badge">{{ activiteiten|length }}</span>beheer</a></li>
+    <li class="active"><a href="{{ path('admin/soortactiviteiten') }}"><span class="badge">{{ soortactiviteiten|length }}</span> soortactiviteiten</a></li>
+{% endblock %}
+
+{% block content %}
+    <h1>Soortactiviteit index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Naam</th>
+                <th>MinLeeftijd</th>
+                <th>Tijdsduur</th>
+                <th>Prijs</th>
+                <th>Beschrijving</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for soortactiviteit in soortactiviteiten %}
+            <tr>
+                <td>{{ soortactiviteit.id }}</td>
+                <td>{{ soortactiviteit.naam }}</td>
+                <td>{{ soortactiviteit.minLeeftijd }}</td>
+                <td>{{ soortactiviteit.tijdsduur }}</td>
+                <td>{{ soortactiviteit.prijs }}</td>
+                <td>{{ soortactiviteit.beschrijving }}</td>
+                <td>
+                    <a href="{{ path('admin/soortactiviteiten/show', {'id': soortactiviteit.id}) }}">show</a>
+                    <a href="{{ path('admin/soortactiviteiten/edit', {'id': soortactiviteit.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('admin/soortactiviteiten/new') }}">Create new</a>
+{% endblock %}

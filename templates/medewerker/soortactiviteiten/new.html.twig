@@ -1,0 +1,17 @@
+{% extends 'medewerker.html.twig' %}
+
+{% block title %}New Soortactiviteit{% endblock %}
+
+{% block menu %}
+    <li><a href="{{ path('admin/index') }}">home</a></li>
+    <li><a href="{{ path('admin/activiteiten') }}"><span class="badge">{{ activiteiten|length }}</span>beheer</a></li>
+    <li class="active"><a href="{{ path('admin/soortactiviteiten') }}"><span class="badge">{{ soortactiviteiten|length }}</span> soortactiviteiten</a></li>
+{% endblock %}
+
+{% block content %}
+    <h1>Create new Soortactiviteit</h1>
+
+    {{ include('medewerker/soortactiviteiten/_form.html.twig') }}
+
+    <a href="{{ path('admin/soortactiviteiten') }}">back to list</a>
+{% endblock %}
